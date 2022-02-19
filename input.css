@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply bg-huddle-mobile bg-no-repeat bg-violet px-5 lg:bg-huddle-desktop lg:px-10;
+    }
+
+    h1 {
+        @apply font-poppins font-semibold text-white text-center text-xl px-10 mt-10 lg:text-5xl lg:text-left lg:pr-36 lg:leading-[60px] lg:mt-24;
+    }
+
+    p {
+        @apply font-open text-white text-center text-base px-4 mt-5 opacity-75  lg:text-lg lg:text-left lg:pl-10 lg:pr-36;
+    }
+
+    button {
+        @apply mt-5 bg-white w-1/2 h-10 ml-[25%] rounded-full font-poppins font-extralight text-violet text-sm shadow-xl lg:transition lg:ease-in lg:duration-300 lg:delay-75 lg:hover:bg-pink lg:hover:text-white lg:ml-10 lg:w-1/5;
+    }
+
+    footer {
+        @apply mt-10 text-center mb-10 lg:text-right lg:-mt-5;
+    }
+
+    i {
+        @apply border-2 rounded-full px-2 py-1.5 text-white mr-2 lg:transition lg:ease-in-out lg:delay-75 lg:duration-300 lg:hover:text-pink lg:hover:cursor-pointer;
+    }
+}
